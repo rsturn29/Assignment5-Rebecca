@@ -7,18 +7,18 @@ public class CustomArrayList<T> implements CustomList<T> {
 	@Override
 	public boolean add(int item) {
 		if(size == items.length) {
-			items = arraySizeIncrease();
+			items= arraySizeIncrease();
 		}
-		items[size]= item;
-		size++;
+		items[size++]= item;
+
 		return true;
 	}
 
 	private Object[] arraySizeIncrease() {
-		Object[] newArray = new Object[size*2];
-		for(int i=0; i< size; i++)
-{
-			newArray[i]= items[i];
+		Object[] newArray = new Object[size * 2];
+		for(int i=0; i< size; i++) {
+
+			 newArray[i]=items[i];
 		}
 		return newArray;
 	}
@@ -38,6 +38,8 @@ public class CustomArrayList<T> implements CustomList<T> {
 		
 	
 	}
+
+
 
 	
 }

@@ -10,7 +10,7 @@ public interface CustomList<T> {
 	 * @return <code>true</code> if item was successfully added, <code>false</code> if the item was not successfully added (note: it should always be able to add an item to the list) 
 	 *
 	 */
-	boolean add (int i);
+	boolean add (int item);
 	
 	/**
 	 * This method should return the size of the <code>CustomList</code>
@@ -26,4 +26,6 @@ public interface CustomList<T> {
 	 * @return The element that is stored inside of the <code>CustomList</code> at the given index
 	 */
 	T get(int index);
+
+	
 }
